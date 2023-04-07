@@ -1,6 +1,6 @@
 <header>
 	<div class="title">
-		<div class="main-title">OVERIIT</div>
+		<div class="main-title">HENRIK</div>
 		<div class="sub-title">SOFTWARE ENGINEER</div>
 	</div>
 	<div class="ref-links">
@@ -96,7 +96,7 @@
 				line-height: 2rem;
 			}
 			.sub-title {
-				font-size: 0.8rem;
+				font-size: .8rem;
 				line-height: 0.8rem;
 				font-weight: 300;
 			}
