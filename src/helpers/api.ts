@@ -13,6 +13,7 @@ export type Experience = {
 export type Skill = {
     name: string;
     image: string;
+    url?: string;
 }
 
 export async function getExperience () {
@@ -97,43 +98,58 @@ export async function getSkills () {
     const skills: Skill[] = [
         {
             name: 'React.js',
-            image: 'https://cdn.worldvectorlogo.com/logos/react-2.svg'
+            image: 'https://cdn.worldvectorlogo.com/logos/react-2.svg',
+            url: 'https://react.dev/'
         },
         {
             name: 'Svelte',
-            image: 'https://cdn.worldvectorlogo.com/logos/svelte-1.svg'
+            image: 'https://cdn.worldvectorlogo.com/logos/svelte-1.svg',
+            url: 'https://svelte.dev/'
         },
         {
             name: 'Vue.js',
-            image: 'https://cdn.worldvectorlogo.com/logos/vue-js-1.svg'
+            image: 'https://cdn.worldvectorlogo.com/logos/vue-js-1.svg',
+            url: 'https://vuejs.org/'
+        },
+        {
+            name: 'Three.js',
+            image: 'https://cdn.worldvectorlogo.com/logos/threejs-1.svg',
+            url: 'https://threejs.org/'
         },
         {
             name: 'Node.js',
-            image: 'https://cdn.worldvectorlogo.com/logos/nodejs-1.svg'
+            image: 'https://cdn.worldvectorlogo.com/logos/nodejs-1.svg',
+            url: 'https://nodejs.org/'
         },
         {
             name: 'GraphQL',
-            image: 'https://cdn.worldvectorlogo.com/logos/graphql-logo-2.svg'
+            image: 'https://cdn.worldvectorlogo.com/logos/graphql-logo-2.svg',
+            url: 'https://graphql.org/'
         },
         {
             name: 'PostgreSQL',
-            image: 'https://cdn.worldvectorlogo.com/logos/postgresql.svg'
+            image: 'https://cdn.worldvectorlogo.com/logos/postgresql.svg',
+            url: 'https://www.postgresql.org/'
         },
         {
             name: 'SQLite',
-            image: 'https://cdn.worldvectorlogo.com/logos/sqlite.svg'
+            image: 'https://cdn.worldvectorlogo.com/logos/sqlite.svg',
+            url: 'https://www.sqlite.org/'
         },
         {
             name: 'Typescript',
-            image: 'https://cdn.worldvectorlogo.com/logos/typescript.svg'
+            image: 'https://cdn.worldvectorlogo.com/logos/typescript.svg',
+            url: 'https://www.typescriptlang.org/'
         },
         {
             name: 'C++',
-            image: 'https://cdn.worldvectorlogo.com/logos/c.svg'
+            image: 'https://cdn.worldvectorlogo.com/logos/c.svg',
+            url: 'https://www.cplusplus.com/'
         },
         {
             name: 'Solidity',
-            image: 'https://cdn.worldvectorlogo.com/logos/solidity.svg'
+            image: 'https://cdn.worldvectorlogo.com/logos/solidity.svg',
+            url: 'https://soliditylang.org/'
         }
     ]
 

@@ -12,12 +12,10 @@
 
 <section>
 	<div class="skills">
-		<!-- each 5 times -->
 		{#each skills as skill, i}
-			<div class="skill" in:scale>
-				<!-- image with typescript logo -->
-				<img src="{skill.image} " alt={skill.name} title={skill.name} />
-			</div>
+		<a href="{skill.url}" target="_blank" class="skill" in:scale>
+					<img src="{skill.image} " alt={skill.name} title={skill.name} />
+		</a>
 		{/each}
 	</div>
 </section>
@@ -28,6 +26,7 @@
 
         width: 1200px;
         max-width: 100%;
+		margin: 0 auto;
 		.skills {
 			width: calc(700px + 7rem);
 			max-width: 100%;
@@ -47,7 +46,7 @@
 				img {
 					max-width: 80%;
 					max-height: 80%;
-					border-radius: 0.5rem;
+					border-radius: 5px;
 					transition: max-height 0.1s ease-in-out, max-width 0.1s ease-in-out;
 					&:hover {
 						max-height: 90%;
