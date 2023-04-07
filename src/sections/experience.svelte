@@ -59,7 +59,9 @@
 <style lang="scss">
 	section {
 		overflow-y: auto;
-
+        width: 1200px;
+        max-width: 100%;
+		margin: 0 auto;
 		.timeline {
 			flex: 1;
 			height: 100%;

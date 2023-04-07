@@ -20,8 +20,9 @@
     section {
         overflow-y: auto;
         overflow-x: hidden;
-        width: 100vw;
-        margin-left: -1.5rem;
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto;
         color: white;
         display: flex;
         justify-content: center;
@@ -54,6 +55,9 @@
 
     @media only screen and (max-width: 600px) {
         section {
+            width: 100vw;
+            max-width: 100vw;
+            margin-left: -1.5rem;
             svg-icon {
                 height: 25px;
                 width: 100px;

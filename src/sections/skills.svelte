@@ -25,6 +25,9 @@
 <style lang="scss">
 	section {
 		overflow-y: auto;
+
+        width: 1200px;
+        max-width: 100%;
 		.skills {
 			width: calc(700px + 7rem);
 			max-width: 100%;
