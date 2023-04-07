@@ -2,15 +2,16 @@
 	import { fly } from 'svelte/transition';
 	import Tabs from './tabs.svelte';
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 
 	const PAGES = ['ABOUT', 'WORK', 'SKILLS'];
 	let active: string = '';
     export let onPageChange: (page: string) => void;
 
 	onMount(() => {
-		const hash = window.location.hash;
-		if (hash) {
-			active = hash.replace('#', '').toUpperCase();
+		const path = window.location.pathname.substring(1);
+		if (path) {
+			active = path.replace('#', '').toUpperCase();
 		} else {
 			active = PAGES[0];
 		}
@@ -19,7 +20,9 @@
 
 	const onTabClick = (page: string) => {
 		active = page;
-		window.location.hash = page.toLowerCase();
+		goto(`/${page.toLowerCase()}`, {
+			replaceState: true
+		});
         onPageChange(page);
 	};
 </script>
