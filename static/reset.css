@@ -1,0 +1,50 @@
+/* Reset.css */
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 25px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .5); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+  }
