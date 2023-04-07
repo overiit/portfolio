@@ -13,8 +13,8 @@
 <section>
 	<div class="skills">
 		{#each skills as skill, i}
-		<a href="{skill.url}" target="_blank" class="skill" in:scale>
-					<img src="{skill.image} " alt={skill.name} title={skill.name} />
+		<a href="{skill.url}" target="_blank" class="skill" in:scale={{ delay: 75 * i }}>
+			<img src="{skill.image} " alt={skill.name} title={skill.name} />
 		</a>
 		{/each}
 	</div>
