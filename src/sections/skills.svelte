@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { getSkills, type Skill } from '../../helpers/api';
+	import { getSkills, type Skill } from '../helpers/api';
 	import { scale } from 'svelte/transition';
 
 	let skills: Skill[] = [];

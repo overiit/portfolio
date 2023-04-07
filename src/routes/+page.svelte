@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Header from "../components/header.svelte";
 	import Navigation from "../components/navigation.svelte";
-	import About from "../components/sections/about.svelte";
-	import Experience from "../components/sections/experience.svelte";
-	import Skills from "../components/sections/skills.svelte";
+	import About from "../sections/about.svelte";
+	import Experience from "../sections/experience.svelte";
+	import Skills from "../sections/skills.svelte";
     
     const DEFAULT_TITLE = "Hey! I'm Henrik Schwebcke";
     let title = DEFAULT_TITLE;
