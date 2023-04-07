@@ -1,10 +1,10 @@
 <script>
 
-	import { fade } from "svelte/transition";
+	import { scale } from "svelte/transition";
 
 </script>
-<section in:fade>
-    <svg-icon>
+<section in:scale={{ delay: 0}}>
+    <svg-icon >
         <svg viewBox="0 0 120 50">
             <text y=25>HEY! I'M</text>
         </svg>
