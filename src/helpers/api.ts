@@ -117,9 +117,9 @@ export async function getSkills () {
             url: 'https://threejs.org/'
         },
         {
-            name: 'Node.js',
-            image: 'https://cdn.worldvectorlogo.com/logos/nodejs-1.svg',
-            url: 'https://nodejs.org/'
+            name: 'Javascript',
+            image: 'https://cdn.worldvectorlogo.com/logos/logo-javascript.svg',
+            url: 'https://www.ecma-international.org/publications-and-standards/standards/ecma-262/'
         },
         {
             name: 'GraphQL',
