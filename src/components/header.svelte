@@ -40,32 +40,6 @@
 				</svg>
 			</svg-icon>
 		</a>
-		<a href="mailto:contact@overiit.com" class="mail">
-			<svg-icon>
-				<svg
-					width="44"
-					height="33"
-					viewBox="0 0 44 33"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						stroke="#3BBE7F"
-						d="M37.0556 3H5.94444C4.87056 3 4 3.86345 4 4.92857V28.0714C4 29.1365 4.87056 30 5.94444 30H37.0556C38.1294 30 39 29.1365 39 28.0714V4.92857C39 3.86345 38.1294 3 37.0556 3Z"
-						stroke-width="5"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						stroke="#3BBE7F"
-						d="M6 10L21.5 19L37 10"
-						stroke-width="5"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-				</svg>
-			</svg-icon>
-		</a>
 	</div>
 </header>
 
@@ -96,7 +70,7 @@
 				line-height: 2rem;
 			}
 			.sub-title {
-				font-size: .8rem;
+				font-size: 0.8rem;
 				line-height: 0.8rem;
 				font-weight: 300;
 			}

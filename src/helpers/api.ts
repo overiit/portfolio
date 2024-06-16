@@ -5,7 +5,7 @@ export type Experience = {
     color: `#${string}`;
     position: string;
     startTime: Date;
-    endTime: Date;
+    endTime?: Date;
     location: string;
     description: string[];
 }
@@ -16,8 +16,19 @@ export type Skill = {
     url?: string;
 }
 
-export async function getExperience () {
+export async function getExperience() {
     const experience: Experience[] = [
+        {
+            company_slug: 'magpie',
+            company_url: 'https://magpiecollectibles.com',
+            color: "#4DE9A1",
+            company: 'Magpie Collectibles',
+            position: 'Senior Full Stack Engineer',
+            startTime: new Date('2023-08-01'),
+            location: 'Remote, Germany',
+            description: []
+
+        },
         {
             company_slug: 'dibbs',
             company_url: 'https://dibbs.io',
@@ -25,7 +36,7 @@ export async function getExperience () {
             company: 'Dibbs',
             position: 'Senior Full Stack Engineer',
             startTime: new Date('2021-05-01'),
-            endTime: new Date('2023-04-01'),
+            endTime: new Date('2023-08-01'),
             location: 'Remote, Germany',
             description: [
                 'Worked on API for the fractional market & vaulting for the TAAS platform',
@@ -88,38 +99,33 @@ export async function getExperience () {
                 'Created landing pages for promotions',
                 'Built full-stack products for community feedback and engagement',
             ]
-        }   
+        }
     ]
 
     return experience;
 }
 
-export async function getSkills () {
+export async function getSkills() {
     const skills: Skill[] = [
-        {
-            name: 'React.js',
-            image: 'https://cdn.worldvectorlogo.com/logos/react-2.svg',
-            url: 'https://react.dev/'
-        },
         {
             name: 'Svelte',
             image: 'https://cdn.worldvectorlogo.com/logos/svelte-1.svg',
             url: 'https://svelte.dev/'
         },
         {
+            name: 'Typescript',
+            image: 'https://cdn.worldvectorlogo.com/logos/typescript.svg',
+            url: 'https://www.typescriptlang.org/'
+        },
+        {
+            name: 'Next.js',
+            image: 'https://cdn.worldvectorlogo.com/logos/nextjs-2.svg',
+            url: 'https://react.dev/'
+        },
+        {
             name: 'Vue.js',
-            image: 'https://cdn.worldvectorlogo.com/logos/vue-js-1.svg',
+            image: 'https://cdn.worldvectorlogo.com/logos/vue-9.svg',
             url: 'https://vuejs.org/'
-        },
-        {
-            name: 'Three.js',
-            image: 'https://cdn.worldvectorlogo.com/logos/threejs-1.svg',
-            url: 'https://threejs.org/'
-        },
-        {
-            name: 'Javascript',
-            image: 'https://cdn.worldvectorlogo.com/logos/logo-javascript.svg',
-            url: 'https://www.ecma-international.org/publications-and-standards/standards/ecma-262/'
         },
         {
             name: 'GraphQL',
@@ -137,14 +143,29 @@ export async function getSkills () {
             url: 'https://www.sqlite.org/'
         },
         {
-            name: 'Typescript',
-            image: 'https://cdn.worldvectorlogo.com/logos/typescript.svg',
-            url: 'https://www.typescriptlang.org/'
+            name: "AWS",
+            image: 'https://cdn.worldvectorlogo.com/logos/aws-2.svg',
+            url: 'https://aws.amazon.com/'
+        },
+        {
+            name: 'Three.js',
+            image: 'https://cdn.worldvectorlogo.com/logos/threejs-1.svg',
+            url: 'https://threejs.org/'
+        },
+        {
+            name: "Flutter",
+            image: 'https://cdn.worldvectorlogo.com/logos/flutter.svg',
+            url: 'https://flutter.dev/'
         },
         {
             name: 'C++',
             image: 'https://cdn.worldvectorlogo.com/logos/c.svg',
             url: 'https://www.cplusplus.com/'
+        },
+        {
+            name: "EOSIO",
+            image: 'https://cdn.worldvectorlogo.com/logos/eos-3.svg',
+            url: 'https://eos.io/'
         },
         {
             name: 'Solidity',

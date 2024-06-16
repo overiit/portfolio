@@ -30,7 +30,7 @@
 <section>
 	<div class="timeline">
 		<div class="timeline-date" in:fly={{ y: -100, duration: 150 }}>
-			{experiences[0]?.endTime.getFullYear()}
+			{experiences[0]?.endTime?.getFullYear() ?? new Date().getFullYear()}
 		</div>
 		<div class="timeline-rows">
 			{#each experiences as experience, i}
@@ -40,7 +40,9 @@
 						<img src="/companies/{experience.company_slug}.png" alt={experience.company} />
 					</a>
 					<div class="date-range">
-						{formatDate(experience.startTime)} - {formatDate(experience.endTime)}
+						{formatDate(experience.startTime)} - {experience.endTime
+							? formatDate(experience.endTime)
+							: 'Present'}
 					</div>
 					<ul class="details">
 						{#each experience.description as desc}
@@ -59,8 +61,8 @@
 <style lang="scss">
 	section {
 		overflow-y: auto;
-        width: 1200px;
-        max-width: 100%;
+		width: 1200px;
+		max-width: 100%;
 		margin: 0 auto;
 		.timeline {
 			flex: 1;
